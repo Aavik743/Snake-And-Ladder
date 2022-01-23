@@ -2,6 +2,8 @@ package SnakeLadder;
 
 public class SnakeLadder
 {
+	//position variable
+	int apos = 0;
 	public static void main(String[] args)
 	{
 	
