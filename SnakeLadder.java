@@ -21,7 +21,12 @@ public class SnakeLadder {
                     {
                         apos_temp = apos;
                         apos += dieA;
-                       
+                        if (apos > 100) 
+                        {
+                            apos = apos_temp;
+                            System.out.println("\nPlayer A need to get Die value " + (100 - apos) + " to win\n");
+                            break;
+                        }
                         System.out.println("\n Player A Rolled ! Die Value : " + dieA + "\n Player A Climbed Laddar with +" + dieA);
                         break;
                     }
